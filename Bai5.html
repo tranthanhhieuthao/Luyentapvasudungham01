@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body >
+<script>
+    let nhapSao=prompt("Xin mời nhập sao");
+    let sao=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let chomSao=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    function ham(String) {
+        for (let i=0;i<sao.length;i++){
+            if (sao[i]==String){
+                return chomSao[i];
+            }
+        }
+        return "Không tìm thấy sao";
+    }
+    let kiemtra=ham(nhapSao);
+    alert(kiemtra);
+</script>
+</body>
+</html>

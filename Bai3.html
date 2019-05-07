@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    function ham() {
+        let number1=parseInt(arguments[0]);
+        let number2=parseInt(arguments[1]);
+        if ( number1>number2 ){
+            return "Tham số 1 lớn hơn tham số 2";
+        }
+        else {
+            return number2+number1;
+        }
+    }
+    let number1=prompt("Nhập số thứ 1");
+    let number2=prompt("Nhập số thứ 2");
+    let result=ham(number1,number2);
+    alert(result);
+</script>
+</body>
+</html>
